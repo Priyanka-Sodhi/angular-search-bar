@@ -11,6 +11,6 @@ export class SearchBarService {
   constructor(private http: HttpClient) { }
 
   getSearch():Observable<any>{
-    return this.http.client.get("https://jsonplaceholder.typicode.com/users");
+    return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
 }
