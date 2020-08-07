@@ -18,6 +18,7 @@
   transform:translate(-50%,-50%);
   background:#fafafa;
   padding:5px;
+  /* box-shadow: 0px 5px 18px #888888; */
 }
 .search-input{
   border:none;
@@ -57,6 +58,11 @@
 .search-box:hover>.search-btn{
   color:black;
   background:rgb(236, 172, 10);
+  transform: scale(1.2);
+}
+.search-box .search-btn:hover{
+  background:black;
+  color:goldenrod;
 }
 h1{
   color:white;
