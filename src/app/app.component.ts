@@ -1,5 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { SearchBarService } from './search-bar.service';
+import { Users } from './users';
 
 
 @Component({
@@ -10,15 +11,11 @@ import { SearchBarService } from './search-bar.service';
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
-  constructor(private api:SearchBarService){
+  constructor(){}
 
-  this.api.getSearch().subscribe((response)=>{
-    console.log(response)
-  },(error)=>{
-
-  })
-  }
 ngOnInit(){
-
   }
+
+
+
 }

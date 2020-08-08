@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchBarService } from './search-bar.service';
@@ -26,7 +26,7 @@ import { SearchBarService } from './search-bar.service';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule],
+  imports:      [ BrowserModule, FormsModule, HttpClientModule],
   declarations: [ AppComponent, SearchBarComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SearchBarService]

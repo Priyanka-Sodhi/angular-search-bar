@@ -6,4 +6,7 @@
     <i class="fa fa-search" aria-hidden="true"></i>
     </button>
   </div>
+  <select>
+    <option *ngFor='let u of myuser' [value]="u.id">{{u.title}}</option>
+  </select>
 </div>
