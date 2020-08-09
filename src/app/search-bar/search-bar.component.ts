@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchBarService } from './search-bar.service';
-import { Users } from './users';
+// import { SearchBarService } from './search-bar.service';
+// import { Users } from './users';
 // import { auth } from 'firebase';
 // // import { map } from 'rxjs/operators';
 // import * as firebaseui from 'firebaseui';
@@ -14,16 +14,16 @@ import { Users } from './users';
 })
 export class SearchBarComponent implements OnInit {
 
-  myuser:Users[];
+  constructor(){}
+  // myuser:Users[];
 
-  constructor(private api:SearchBarService){
-    this.api.getSearch().subscribe((response)=>{
-    this.myuser = response;
-   },(error)=>{
-  })
+  // constructor(private api:SearchBarService){
+  //   this.api.getSearch().subscribe((response)=>{
+  //   this.myuser = response;
+  //  },(error)=>{
+  // })
 
-
-  }
+  // }
   ngOnInit() {
   }
 
