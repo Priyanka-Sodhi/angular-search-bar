@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { SearchBarService } from './search-bar.service';
+import { SearchBarService } from './search-bar.service';
 // import { Users } from './users';
 // import { auth } from 'firebase';
 // // import { map } from 'rxjs/operators';
@@ -14,16 +14,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor(){}
-  // myuser:Users[];
+  // constructor(){}
+  myuser:Users[];
 
-  // constructor(private api:SearchBarService){
-  //   this.api.getSearch().subscribe((response)=>{
-  //   this.myuser = response;
-  //  },(error)=>{
-  // })
+  constructor(private api:SearchBarService){
+    this.api.getSearch().subscribe((response)=>{
+    this.myuser = response;
+   },(error)=>{
+  })
+  }
 
-  // }
+  // courses:["python","java","javascript","c++"];
   ngOnInit() {
   }
 

@@ -1,11 +1,14 @@
 <div class="search-container">
   <h1>Search Results</h1>
   <div class="search-box">
-    <input type="text" class="search-input" placeholder="Search here!">
+    <input type="text" class="search-input" placeholder="Search here!" [(ngModel)]="searchText">
     <button type="submit" class="search-btn">
     <i class="fa fa-search" aria-hidden="true"></i>
     </button>
   </div>
+  <ul *ngFor="let c of courses | filter: searchText">
+    <li>{{c}}</li>
+  </ul>
   <!-- <select>
     <option *ngFor='let u of myuser' [value]="u.id">{{u.title}}</option>
   </select> -->

@@ -5,6 +5,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchBarService } from './search-bar.service';
+// import { FilterPipe } from './filter.pipe';
 
 // import { AngularFireModule } from 'angularfire2';
 // import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -27,7 +28,7 @@ import { SearchBarService } from './search-bar.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule],
-  declarations: [ AppComponent, SearchBarComponent ],
+  declarations: [ AppComponent, SearchBarComponent],
   bootstrap:    [ AppComponent ],
   providers: [SearchBarService]
 })
