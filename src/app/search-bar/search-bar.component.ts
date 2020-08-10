@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchBarService } from './search-bar.service';
-// import { Users } from './users';
+import { SearchBarService } from '../search-bar.service';
+import { Users } from '../users';
 // import { auth } from 'firebase';
 // // import { map } from 'rxjs/operators';
 // import * as firebaseui from 'firebaseui';
